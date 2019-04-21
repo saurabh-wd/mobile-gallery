@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Cart extends Component {
-  render() {
-    return (
-      <div>
-        cart
-      </div>
-    );
+export const Cart = (props)=>{
+	//console.log("abc",props);
+    const {location} = props;
+	return(
+	  <div>You are now at {location.pathname}</div>
+	)
   }
-}
+
